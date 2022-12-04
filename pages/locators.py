@@ -15,3 +15,7 @@ class ProductPageLocators():
     BASKET_TOTAL_MESSAGE = (By.XPATH, "//div[@id='messages']//div[contains(@class, 'alertinner') and contains(string(), 'Your basket total is now')]")
     BASKET_TOTAL_MESSAGE_AMOUNT = (By.XPATH, "//div[@id='messages']//div[contains(@class, 'alertinner') and contains(string(), 'Your basket total is now')]/p/strong") 
     PRODUCT_PRICE = (By.XPATH, "//article[@class='product_page']//div[contains(@class, 'product_main')]/p[contains(@class, 'price_color')]") 
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
